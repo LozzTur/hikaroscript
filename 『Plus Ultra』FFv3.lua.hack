@@ -181,7 +181,7 @@ gg.clearResults()
 t = gg.getListItems()
 gg.removeListItems(t)
 --
-gg.alert('PROXIMA ATUALIZAÇÃO O SCRIPT VAI TER ACESSO A INTERNET FACILITANDO O USO :D')
+
 gg.alert("➽ Se for fazer video com meu script deixe os creditos do meu canal!", "『Concordo』")
 gg.alert('『Criado por hikaro』')
 --
