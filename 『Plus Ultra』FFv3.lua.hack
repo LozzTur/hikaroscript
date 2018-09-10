@@ -1054,6 +1054,8 @@ gg.alert("© Hack by: Hikaro All Rights Reserved                      ----------
     print('☑ Visite meu canal para novos scripts! É de graça :D')
     print('© YTHikaro all rights reserved')
     os.exit()
+    os.exit()
+    os.exit()
 end
 
  if menuk == 1 then
