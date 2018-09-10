@@ -1042,6 +1042,9 @@ function loop()
     gg.sleep('100')    
 end
 --
+function exito()
+os.exit()
+--
 function exit()
     gg.toast('Script Minimizado')
 end
@@ -1053,10 +1056,12 @@ gg.alert("© Hack by: Hikaro All Rights Reserved                      ----------
     print('✤『Caso for gravar video com meus scripts deixe os creditos!』')
     print('☑ Visite meu canal para novos scripts! É de graça :D')
     print('© YTHikaro all rights reserved')
-    os.exit()
-    os.exit()
-    os.exit()
-end
+    exito()
+    end
+    
+  
+
+
 
  if menuk == 1 then
     open()
