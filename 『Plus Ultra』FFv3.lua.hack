@@ -1056,8 +1056,8 @@ gg.alert("© Hack by: Hikaro All Rights Reserved                      ----------
     print('✤『Caso for gravar video com meus scripts deixe os creditos!』')
     print('☑ Visite meu canal para novos scripts! É de graça :D')
     print('© YTHikaro all rights reserved')
-    exito()
-    end
+    os.exit()
+   
     
   
 
