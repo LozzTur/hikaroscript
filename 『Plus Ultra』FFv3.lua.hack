@@ -182,6 +182,7 @@ gg.removeListItems(t)
 
 gg.alert("➽ Se for fazer video com meu script deixe os creditos do meu canal!", "『Concordo』")
 gg.alert('『Criado por hikaro』')
+gg.alert('Test Internet')
 --
 while(true) do
 if gg.isVisible(true) then
