@@ -745,15 +745,35 @@ gg.clearResults()
 end
 --
 function shot()
-menu = gg.choice({'♘【Auto HS】','♘【No Recoil】','♘【High Damage】','♘【Wall Shot e Wall Hack】 ','♘【Munição Limitada】','♘【Super Damage】','↸Back'},nil,'⚒ Escolha')
+menu = gg.choice({'♘【Auto HS】','♘【No Recoil】','♘【High Damage】','♘【Wall Shot e Wall Hack】 ','♘【Munição Limitada】','♘【Super Damage】','♘【Aim Assist】','↸Back'},nil,'⚒ Escolha')
 if menu == 1 then auto() end
 if menu == 2 then recoil() end
 if menu == 3 then damage() end
 if menu == 4 then wallshot() end
 if menu == 5 then ammo() end
 if menu == 6 then damage1() end
-if menu == 7 then open() end
+if menu == 7 then aim() end
+if menu == 8 then open() end
 menuk= -1
+end
+--
+function aim()
+
+gg.alert('Esse hack foi descoberto por patolino!')
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber('75;40::5', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('40', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll('360', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.clearResults()
+
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber(' 0.50499999523;0.50499999523::9', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll('720', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.clearResults()
+gg.toast('Aim Assystem 360° Active')
+gg.addListItems(t)
 end
 --
 function damage1()
