@@ -364,7 +364,7 @@ gg.clearResults()
 end
 --
 function bots()
-menu = gg.multiChoice({'➽ Active Bots','➽ Desactive Bots','↸Back'},nil,'Nesse modo você vai poder jogar com bots ＼(>o<)／')
+menu = gg.multiChoice({'➽ Active BotsS','➽ Desactive Bots','↸Back'},nil,'Nesse modo você vai poder jogar com bots ＼(>o<)／')
 if menu [1] == true then boton() end
 if menu [2] == true then botoff() end
 if menu [3] == true then open() end
