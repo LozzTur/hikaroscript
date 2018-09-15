@@ -39,6 +39,49 @@ if menu == nil then loop1() end
 menuk = -1
 end
 --
+function antena()
+
+
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("40800000h", gg.TYPE_DWORD)
+gg.searchNumber("40800000h", gg.TYPE_DWORD)
+gg.getResults(1000)
+gg.editAll("4040b60bh", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Hack Pronto! (^.^)")
+
+		
+
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("c0c00000h", gg.TYPE_DWORD)
+gg.searchNumber("c0c00000h", gg.TYPE_DWORD)
+gg.getResults(1000)
+gg.editAll("c34819dch", gg.TYPE_DWORD)
+gg.toast('Hack Completo (^.^)')
+
+
+
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("3f7fbe77h;3a83126fh", gg.TYPE_DWORD)
+gg.searchNumber("3f7fbe77h;3a83126fh", gg.TYPE_DWORD)
+gg.searchNumber("3f7fbe77h;3a83126fh", gg.TYPE_DWORD)
+gg.getResults(1000)
+gg.editAll("43960000h", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast(" Antenna Pronto! (^.^) ")
+
+
+
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("3f266666h;3eb33334h", gg.TYPE_DWORD)
+gg.searchNumber("3f266666h;3eb33334h", gg.TYPE_DWORD)
+gg.searchNumber("3f266666h;3eb33334h", gg.TYPE_DWORD)
+gg.getResults(1000)
+gg.editAll("43960000h", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast(" Antenna 2 Pronto! (^.^)")
+end
+--
 function loop1()
 gg.toast('Aperte no icone do gg para abrir o menu novamente!')
     gg.sleep('100')    
