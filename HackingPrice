@@ -1,0 +1,37 @@
+-- Hook started
+gg.getResults(5000)
+gg.setValues({
+})
+--
+gg.clearResults()
+t = gg.getListItems()
+gg.removeListItems(t)
+--
+while(true) do
+if gg.isVisible(true) then
+menuk = 1
+gg.setVisible(false)
+end
+--
+function open()
+menu = gg.choice({'Antena (ACTIVE ALL)','Aumentar Fov','Paraquedas (NÃO ATUALIZADO)','Exit'},nil,'Divirta-se!')
+if menu == 1 then antena() end
+if menu == 2 then fov() end
+if menu == 3 then paraqds() end
+if menu == 4 then exit () end
+if menu == nil then loop1() end
+menuk = -1
+end
+--
+function loop1()
+gg.toast('Aperte no icone do gg para abrir o menu novamente!')
+    gg.sleep('100')    
+end
+--
+if menuk == 1 then
+
+    open()
+
+  end
+
+end
