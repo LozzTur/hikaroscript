@@ -203,7 +203,7 @@ open()
 end
 --
 function open()
-menu = gg.choice({'✤【Desativar Ant Cheat】','✤【Shot Menu (NEW)】','✤【Fast Parachute】','✤【Speed Menu】','✤【Land Hacks】','✤【Suicide】','✤【Antena】','✤【Bots Menu】','✤【Fix Erro 105 106】','✤【Jump Menu FIX】','✤【UNLOCK RANQUEADA】','✤【COLOR MENU】','☑ Help','SAIR E CREDITOS'},nil , '☯『HACK BY: HIKARO』                             『PARCERIA: PATOLINO』')
+menu = gg.choice({'✤【Bypases】','✤【Shot Menu (NEW)】','✤【Fast Parachute】','✤【Speed Menu】','✤【Land Hacks】','✤【Suicide】','✤【Antena】','✤【Bots Menu】','✤【Fix Erro 105 106】','✤【Jump Menu FIX】','✤【UNLOCK RANQUEADA】','✤【COLOR MENU】','☑ Help','SAIR E CREDITOS'},nil , '☯『HACK BY: HIKARO』                             『PARCERIA: PATOLINO』')
     if menu == nil then loop() end
     if menu == 1 then antcheat() end
     if menu == 2 then shot() end
@@ -738,9 +738,37 @@ gg.clearResults()
 end
 --
 function antcheat()
+menu = gg.choice({'ⓑ Bypass 1 (NORMAL)','ⓑ bypass 2','ⓑ bypass 3'},nil,'Perfeito para resolver erro 106')
+if menu == 1 then by1 end
+if menu == 2 then by2 end
+if menu == 3 then by3 end
+menuk = -1
+end
+
+function by1()
 gg.setRanges(gg.REGION_ANONYMOUS | gg.REGION_BAD | gg.REGION_C_BSS | gg.REGION_C_HEAP | gg.REGION_C_ALLOC | gg.REGION_CODE_APP)
 gg.searchNumber("0", gg.TYPE_WORD | gg.TYPE_DOUBLE | gg.TYPE_QWORD | gg.TYPE_DWORD | gg.TYPE_BYTE | gg.TYPE_XOR | gg.TYPE_FLOAT)
 gg.searchNumber("0", gg.TYPE_WORD | gg.TYPE_DOUBLE | gg.TYPE_QWORD | gg.TYPE_DWORD | gg.TYPE_BYTE | gg.TYPE_XOR | gg.TYPE_FLOAT)
+gg.clearResults()
+end
+--
+function by2()
+gg.setRanges(gg.REGION_ANONYMOUS | gg.REGION_BAD | gg.REGION_C_BSS | gg.REGION_C_HEAP | gg.REGION_C_ALLOC | gg.REGION_CODE_APP)
+gg.searchNumber("1", gg.TYPE_WORD | gg.TYPE_DOUBLE | gg.TYPE_QWORD | gg.TYPE_DWORD | gg.TYPE_BYTE | gg.TYPE_XOR | gg.TYPE_FLOAT)
+gg.setRanges(gg.REGION_ANONYMOUS | gg.REGION_BAD | gg.REGION_C_BSS | gg.REGION_C_HEAP | gg.REGION_C_ALLOC | gg.REGION_CODE_APP)
+gg.searchNumber("2", gg.TYPE_WORD | gg.TYPE_DOUBLE | gg.TYPE_QWORD | gg.TYPE_DWORD | gg.TYPE_BYTE | gg.TYPE_XOR | gg.TYPE_FLOAT)
+gg.setRanges(gg.REGION_ANONYMOUS | gg.REGION_BAD | gg.REGION_C_BSS | gg.REGION_C_HEAP | gg.REGION_C_ALLOC | gg.REGION_CODE_APP)
+gg.searchNumber("4", gg.TYPE_WORD | gg.TYPE_DOUBLE | gg.TYPE_QWORD | gg.TYPE_DWORD | gg.TYPE_BYTE | gg.TYPE_XOR | gg.TYPE_FLOAT)
+
+gg.clearResults()
+end
+--
+function by3()
+gg.searchNumber("1", gg.TYPE_WORD | gg.TYPE_DOUBLE | gg.TYPE_QWORD | gg.TYPE_DWORD | gg.TYPE_BYTE | gg.TYPE_XOR | gg.TYPE_FLOAT)
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("2", gg.TYPE_WORD | gg.TYPE_DOUBLE | gg.TYPE_QWORD | gg.TYPE_DWORD | gg.TYPE_BYTE | gg.TYPE_XOR | gg.TYPE_FLOAT)
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("4", gg.TYPE_WORD | gg.TYPE_DOUBLE | gg.TYPE_QWORD | gg.TYPE_DWORD | gg.TYPE_BYTE | gg.TYPE_XOR | gg.TYPE_FLOAT)
 gg.clearResults()
 end
 --
@@ -768,7 +796,7 @@ gg.editAll('360', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.clearResults()
 
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber(' 0.50499999523;0.50499999523::9', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0.50499999523;0.50499999523::9', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10)
 gg.editAll('720', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.clearResults()
