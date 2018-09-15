@@ -2,22 +2,8 @@
 gg.getResults(5000)
 gg.setValues({
 })
---
-key = "2018"
-v_value = gg.prompt({
-  "🔑Coloque a senha."
-}, {
-  [1] = 0
-}, {
-  [1] = "number"
-})
-function O()
-end
-if v_value[1] == key then
-  O()
-else
-  os.exit()
-end
+
+
 --
 gg.clearResults()
 t = gg.getListItems()
