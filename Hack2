@@ -790,7 +790,7 @@ if menu7[6] true then arm6() end
 if menu7[7] true then arm7() end
 if menu7[8] true then arm8() end
 if menu7[9] true then arm9() end
-if menu7[10] true then arm10() end
+if menu7[10] true then arm100() end
 if menu7[11] true then arm11() end
 if menu7[12] true then arm12() end
 if menu7[13] true then open() end
@@ -799,7 +799,7 @@ end
 --
 function arm1()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
-gg.searchNumber(' 0.40000000596;0.40000000596;15;5;10;1;1.5;1;0.44999998808;1D~6D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0.40000000596;0.40000000596;15;5;10;1;1.5;1;0.44999998808;1D~6D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber('0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(120)
 t = gg.getResults(20)
@@ -840,7 +840,7 @@ end
 --
 function arm4()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
-gg.searchNumber(' 0.0700000003;0.0700000003;220~225;0.15000000596;1.10000002384;1;0.64999997616;1D~48D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0.0700000003;0.0700000003;220~225;0.15000000596;1.10000002384;1;0.64999997616;1D~48D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber('0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(120)
 t = gg.getResults(20)
@@ -868,7 +868,7 @@ end
 --
 function arm6()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
-gg.searchNumber('0.18000000715;0.18000000715;220~225;0.30000001192;1.20000004768;1;0.55000001192;1D~48D;0::119 ', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0.18000000715;0.18000000715;220~225;0.30000001192;1.20000004768;1;0.55000001192;1D~48D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber('0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(120)
 t = gg.getResults(20)
@@ -882,7 +882,7 @@ end
 --
 function arm7()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
-gg.searchNumber(' 0.09000000358;0.09000000358;220~225;0.28000000119;1.25;1;0.64999997616;1D~48D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0.09000000358;0.09000000358;220~225;0.28000000119;1.25;1;0.64999997616;1D~48D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber('0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(120)
 t = gg.getResults(20)
@@ -896,7 +896,7 @@ end
 --
 function arm8()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
-gg.searchNumber(' 0.11999999732;0.15000000596;220~225;0.20000000298;1.20000004768;1;0.55000001192;1D~48D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0.11999999732;0.15000000596;220~225;0.20000000298;1.20000004768;1;0.55000001192;1D~48D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber('0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(120)
 t = gg.getResults(20)
@@ -910,7 +910,7 @@ end
 --
 function arm9()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
-gg.searchNumber(' 0.15999999642;0.15999999642;220~225;0.20000000298;1.14999997616;1;0.30000001192;1D~100D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0.15999999642;0.15999999642;220~225;0.20000000298;1.14999997616;1;0.30000001192;1D~100D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber('0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(120)
 t = gg.getResults(20)
@@ -922,9 +922,9 @@ gg.toast('M249 ACTIVE')
 gg.addListItems(t)
 end
 --
-function arm10()
+function arm100()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
-gg.searchNumber(' 0.33000001311;0.33000001311;25;4;20;1.5;1.5;1;1D~5D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0.33000001311;0.33000001311;25;4;20;1.5;1.5;1;1D~5D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber('0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(120)
 t = gg.getResults(20)
@@ -952,7 +952,7 @@ end
 --
 function arm12()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
-gg.searchNumber(' 0.19;.19;220~225;0.17000000179;1.20000004768;1;0.55000001192;1D~48D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0.19;.19;220~225;0.17000000179;1.20000004768;1;0.55000001192;1D~48D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber('0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(300)
 t = gg.getResults(10)
