@@ -772,14 +772,200 @@ gg.clearResults()
 end
 --
 function shot()
-menu = gg.choice({'♘【Auto HS】','♘【No Recoil】','♘【High Damage】','♘【Wall Shot e Wall Hack】 ','♘【Munição Limitada】','↸Back'},nil,'⚒ Escolha')
+menu = gg.choice({'♘【Auto HS】','♘【No Recoil】','♘【High Damage】','♘【Wall Shot e Wall Hack】 ','♘【Munição Limitada】','♘【No Recoil 2】','↸Back'},nil,'⚒ Escolha')
 if menu == 1 then auto() end
 if menu == 2 then recoil() end
 if menu == 3 then damage() end
 if menu == 4 then wallshot() end
 if menu == 5 then ammo() end
-if menu == 6 then open() end
+if menu == 6 then reco() end
+if menu == 7 then open() end
 menuk= -1
+end
+--
+function reco()
+menu7 = gg.multiChoice({'ⓞ M1012','ⓞ M4A1','ⓞ MP5','ⓞ MP40','ⓞ SCAR','ⓞ AK47','ⓞ UMP','ⓞ FAMAS','ⓞ M249','ⓞ SPAS12','ⓞ GROZA','ⓞ XM8','↸Back'},nil,'Atirar sem recuo')
+if menu7[1] true then arm1() end
+if menu7[2] true then arm2() end
+if menu7[3] true then arm3() end
+if menu7[4] true then arm4() end
+if menu7[5] true then arm5() end
+if menu7[6] true then arm6() end
+if menu7[7] true then arm7() end
+if menu7[8] true then arm8() end
+if menu7[9] true then arm9() end
+if menu7[10] true then arm100() end
+if menu7[11] true then arm11() end
+if menu7[12] true then arm12() end
+if menu7[13] true then open() end
+menuk =-1
+end
+--
+function arm1()
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+gg.searchNumber('0.40000000596;0.40000000596;15;5;10;1;1.5;1;0.44999998808;1D~6D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(120)
+t = gg.getResults(20)
+for i, v in ipairs(t) do
+    t[i].value = '0'
+    t[i].freeze = true
+gg.clearResults()
+gg.toast('M1012 Active')
+gg.addListItems(t)
+end 
+--
+function arm2()
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+gg.searchNumber('0.18000000715;0.18000000715;220~225;0.20000000298;1.20000004768;1;0.55000001192;1D~48D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(120)
+t = gg.getResults(20)
+for i, v in ipairs(t) do
+    t[i].value = '0'
+    t[i].freeze = true
+gg.clearResults()
+gg.toast('M4A1 ACTIVE')
+gg.addListItems(t)
+end
+--
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+gg.searchNumber('0.1099999994;0.1099999994;220~225;0.15999999642;1.10000002384;1;0.64999997616;1D~48D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(120)
+t = gg.getResults(20)
+for i, v in ipairs(t) do
+    t[i].value = '0'
+    t[i].freeze = true
+gg.clearResults()
+gg.toast('MP5 ACTIVE')
+gg.addListItems(t)
+end
+--
+function arm4()
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+gg.searchNumber('0.0700000003;0.0700000003;220~225;0.15000000596;1.10000002384;1;0.64999997616;1D~48D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(120)
+t = gg.getResults(20)
+for i, v in ipairs(t) do
+    t[i].value = '0'
+    t[i].freeze = true
+gg.clearResults()
+gg.toast('MP40 ACTIVE')
+gg.addListItems(t)
+end
+--
+function arm5()
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+gg.searchNumber('0.15000000596;0.15000000596;220~225;0.25;1.14999997616;1;0.55000001192;1D~48D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(120)
+t = gg.getResults(20)
+for i, v in ipairs(t) do
+    t[i].value = '0'
+    t[i].freeze = true
+gg.clearResults()
+gg.toast('SCAR ACTIVE')
+gg.addListItems(t)
+end
+--
+function arm6()
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+gg.searchNumber('0.18000000715;0.18000000715;220~225;0.30000001192;1.20000004768;1;0.55000001192;1D~48D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(120)
+t = gg.getResults(20)
+for i, v in ipairs(t) do
+    t[i].value = '0'
+    t[i].freeze = true
+gg.clearResults()
+gg.toast('AK ACTIVE')
+gg.addListItems(t)
+end
+--
+function arm7()
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+gg.searchNumber('0.09000000358;0.09000000358;220~225;0.28000000119;1.25;1;0.64999997616;1D~48D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(120)
+t = gg.getResults(20)
+for i, v in ipairs(t) do
+    t[i].value = '0'
+    t[i].freeze = true
+gg.clearResults()
+gg.toast('UMP ACTIVE')
+gg.addListItems(t)
+end
+--
+function arm8()
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+gg.searchNumber('0.11999999732;0.15000000596;220~225;0.20000000298;1.20000004768;1;0.55000001192;1D~48D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(120)
+t = gg.getResults(20)
+for i, v in ipairs(t) do
+    t[i].value = '0'
+    t[i].freeze = true
+gg.clearResults()
+gg.toast('FAMAS ACTIVE')
+gg.addListItems(t)
+end
+--
+function arm9()
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+gg.searchNumber('0.15999999642;0.15999999642;220~225;0.20000000298;1.14999997616;1;0.30000001192;1D~100D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(120)
+t = gg.getResults(20)
+for i, v in ipairs(t) do
+    t[i].value = '0'
+    t[i].freeze = true
+gg.clearResults()
+gg.toast('M249 ACTIVE')
+gg.addListItems(t)
+end
+--
+function arm100()
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+gg.searchNumber('0.33000001311;0.33000001311;25;4;20;1.5;1.5;1;1D~5D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(120)
+t = gg.getResults(20)
+for i, v in ipairs(t) do
+    t[i].value = '0'
+    t[i].freeze = true
+gg.clearResults()
+gg.toast('SPAS12')
+gg.addListItems(t)
+end
+--
+function arm11()
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+gg.searchNumber('37D;0.18000000715;0.18000000715;220~225;0.20000000298;1.20000004768;1;0.30000001192;1D~48D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(120)
+t = gg.getResults(20)
+for i, v in ipairs(t) do
+    t[i].value = '0'
+    t[i].freeze = true
+gg.clearResults()
+gg.toast('GROZA ACTIVE')
+gg.addListItems(t)
+end
+--
+function arm12()
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+gg.searchNumber('0.19;.19;220~225;0.17000000179;1.20000004768;1;0.55000001192;1D~48D;0::119', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(300)
+t = gg.getResults(10)
+for i, v in ipairs(t) do
+    t[i].value = '0'
+    t[i].freeze = true
+gg.clearResults()
+gg.toast('XM8 ACTIVE')
+gg.addListItems(t)
 end
 --
 function ammo()
