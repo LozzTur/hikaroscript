@@ -618,9 +618,12 @@ gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS | gg.REGION_CODE_APP)
 gg.searchNumber('.8;-6::', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber('-6', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(5000)
-gg.editAll('-999996', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-end
+local t = gg.getResults(5000)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_DWORD then
+		v.value = "-999996" 
+		v.freeze = true
+	end
 --
 function night()
 gg.setRanges(gg.REGION_CODE_APP)
