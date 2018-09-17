@@ -1,0 +1,37 @@
+gg.alert('Hack Paraquedas Script Separado')
+--
+while(true) do
+if gg.isVisible(true) then
+menuk = 1
+gg.setVisible(false)
+end
+
+function open()
+menu = gg.choice({'Paraquedas ✔','EXIT ✦'},nil,'Paraquedas Atualizado')
+if menu == 1 then att() end
+if menu == 2 then exit() end
+menuk = -1
+end
+--
+function att()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS | gg.REGION_CODE_APP)
+gg.searchNumber('.8;-6::', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('-6', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(5000)
+t = gg.getResults(5000)
+for i, v in ipairs(t) do
+    t[i].value = '-99996'
+    t[i].freeze = true
+    gg.clearResults
+end
+end
+--
+function exit()
+os.exit()
+end
+
+ if menuk == 1 then
+    open()
+  end
+end
