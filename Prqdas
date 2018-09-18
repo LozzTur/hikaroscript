@@ -18,13 +18,10 @@ gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS | gg.REGION_CODE_APP)
 gg.searchNumber('.8;-6::', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber('-6', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(5000)
-t = gg.getResults(5000)
-for i, v in ipairs(t) do
-    t[i].value = '-99996'
-    t[i].freeze = true
-    gg.clearResults
-end
+t = gg.getResults(4)
+t[4].value = '-99996'
+t[4].freeze = true
+t[4].freezType = gg.FREEZE_NORMAL
 end
 --
 function exit()
