@@ -41,6 +41,15 @@ gg.clearResults()
 end
 --
 function sky()
+menu = gg.choice({'✦ Ativar 1 ','✦ Ativar 2','Back ✘'},nil,'Siga os passos corretamente!')
+if menu == nil then exit2() end
+if menu == 1 then act11() end
+if menu == 2 then act22() end
+if menu == 3 then open() end
+menuk = 1
+end
+--
+function act11()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber('-6', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(100)
@@ -52,11 +61,20 @@ gg.getResults(107)
 gg.editAll('99', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 end
 --
+function act22()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber('99', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(107)
+gg.editAll('1000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+end
+--
 	function att()
-gg.alert('Como usar? Mesmo procedimento do que o sky fly depois de ativar o hack pule do avião depois disso aparecerá um menu e aperte em "Ativar 2" divirta-se!
-menu = gg.choice({✦ Ativar 1','✦ Ativar 2','↸Back'},nil,'Siga os passos corretos!')
+gg.alert('Como usar? Mesmo procedimento do que o sky fly depois de ativar o hack pule do avião depois disso aparecerá um menu e aperte em Ativar 2" divirta-se!')
+menu = gg.choice({'✦ Ativar 1 ','✦ Ativar 2','Back ✘'},nil,'Siga os passos corretamente!')
+if menu == nil then exit2() end
 if menu == 1 then act1() end
 if menu == 2 then act2() end
+if menu == 3 then open() end
 menuk = 1
 end
 --
@@ -85,10 +103,10 @@ end
 
 --
 function act2()
-gg.searchNumber("1000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("1000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("99", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("99", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(400)
-gg.editAll("99", gg.TYPE_FLOAT, false, 536870912, 0, -1)
+gg.editAll("1000", gg.TYPE_FLOAT, false, 536870912, 0, -1)
 gg.clearResults()
 end
 --
