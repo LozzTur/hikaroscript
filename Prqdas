@@ -53,6 +53,14 @@ gg.editAll('99', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 end
 --
 	function att()
+gg.alert('Como usar? Mesmo procedimento do que o sky fly depois de ativar o hack pule do avião depois disso aparecerá um menu e aperte em "Ativar 2" divirta-se!
+menu = gg.choice({✦ Ativar 1','✦ Ativar 2','↸Back'},nil,'Siga os passos corretos!')
+if menu == 1 then act1() end
+if menu == 2 then act2() end
+menuk = 1
+end
+--
+function act1()
 gg.setRanges(gg.REGION_ANONYMOUS | gg.REGION_CODE_APP)
 gg.searchNumber('.8;-6::', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber('-6', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -71,7 +79,17 @@ gg.editAll("99", gg.TYPE_FLOAT, false, 536870912, 0, -1)
 gg.clearResults()
 
     end
+ end
 end
+
+
+--
+function act2()
+gg.searchNumber("1000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(400)
+gg.editAll("99", gg.TYPE_FLOAT, false, 536870912, 0, -1)
+gg.clearResults()
 end
 --
 function exit()
