@@ -1,15 +1,8 @@
 gg.alert('Hack By: Hikaro use com responsabilidades')
+
+
 --
---if io.open then
---- protecion hack only ----
-  --gg.searchNumber = function_hook(gg.searchNumber,new_search)
-  --gg.getResults = function_hook(gg.getResults,new_result)
-  --gg.editAll = function_hook(gg.editAll,new_edit)
-  --gg.clearResults = function_hook(gg.clearResults,new_clear)
-  --gg.setRanges = function_hook(gg.setRanges, new_setrange)
-  --gg.getRanges = function_hook(gg.getRanges, new_getrange)
-  --gg.addListItems = function_hook(gg.addListItems, new_add)
---end 
+
 while( true ) do
 if gg.isVisible(false) then
     menuk = 1
