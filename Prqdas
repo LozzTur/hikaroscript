@@ -22,12 +22,22 @@ if gg.isVisible(false) then
     end
 --
 function open()
-menu = gg.choice({'⟪ Paraquedas ⟫','⟪ Sky Fly ⟫','EXIT ✘'},nil,'Paraquedas Atualizado')
+menu = gg.choice({'⟪ Paraquedas ⟫','⟪ Sky Fly ⟫','⟪ CARRO DEBAIXO DA TERRA ⟫','EXIT ✘'},nil,'Paraquedas Atualizado')
 if menu == nil then exit2() end
 if menu == 1 then att() end
 if menu == 2 then sky() end
-if menu == 3 then exit() end
+if menu == 3 then ride() end
+if menu == 4 then exit() end
 menuk = -1
+end
+--
+function ride()
+gg.clearResults()
+gg.clearResults()
+gg.searchNumber("100",gg.TYPE_FLOAT,false,gg.SIGN_FUZZY_EQUAL,0,-1)
+gg.getResults(1000)
+gg.editAll("80",gg.TYPE_FLOAT,false,gg.SIGN_FUZZY_EQUAL,0,-1)
+gg.clearResults()
 end
 --
 function sky()
