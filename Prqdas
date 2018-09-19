@@ -1,46 +1,55 @@
-gg.alert('Hack Paraquedas Script Separado')
+gg.alert('Hack By: Hikaro use com responsabilidades')
 --
-while(true) do
-if gg.isVisible(true) then
-menuk = 1
-gg.setVisible(false)
-end
-
+--if io.open then
+--- protecion hack only ----
+  --gg.searchNumber = function_hook(gg.searchNumber,new_search)
+  --gg.getResults = function_hook(gg.getResults,new_result)
+  --gg.editAll = function_hook(gg.editAll,new_edit)
+  --gg.clearResults = function_hook(gg.clearResults,new_clear)
+  --gg.setRanges = function_hook(gg.setRanges, new_setrange)
+  --gg.getRanges = function_hook(gg.getRanges, new_getrange)
+  --gg.addListItems = function_hook(gg.addListItems, new_add)
+--end 
+while( true ) do
+if gg.isVisible(false) then
+    menuk = 1
+    gg.setVisible(false)
+    open = 1
+    end
+--
 function open()
-menu = gg.choice({'Paraquedas ✔','Sky Fly ✔','EXIT ✦'},nil,'Paraquedas Atualizado')
+menu = gg.choice({'⟪ Paraquedas ⟫','EXIT ✘'},nil,'Paraquedas Atualizado')
+if menu == nil then exit2() end
 if menu == 1 then att() end
-if menu == 2 then sky() end
-if menu == 3 then exit() end
+if menu == 2 then exit() end
 menuk = -1
 end
 --
-function att()
+	function att()
 gg.setRanges(gg.REGION_ANONYMOUS | gg.REGION_CODE_APP)
 gg.searchNumber('.8;-6::', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber('-6', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-t = gg.getResults(4)
-t[4].value = '-99996'
-t[4].freeze = true
-gg.clearResults()
+gg.getResults(5000)
+local t = gg.getResults(5000)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_FLOAT then
+		v.value = "-99996"
+		v.freeze = true
+    end
+end
 end
 --
-function sky()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('-6', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll('-9999996', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.clearResults()
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber('1000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(107)
-gg.editAll('99', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-end
-
 function exit()
+gg.toast('FIM')
 os.exit()
 end
-
- if menuk == 1 then
-    open()
-  end
+--
+function exit2()
+gg.toast('MINIMIZADO')
 end
+
+if menuk == 1 then 
+open() 
+end
+end
+--
