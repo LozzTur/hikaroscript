@@ -11,11 +11,24 @@ if gg.isVisible(false) then
     end
 --
 function open()
-menu = gg.choice({'⟪ Paraquedas ⟫','EXIT ✘'},nil,'Paraquedas Atualizado')
+menu = gg.choice({'⟪ Paraquedas ⟫','⟪ Sky Fly ⟫','EXIT ✘'},nil,'Paraquedas Atualizado')
 if menu == nil then exit2() end
 if menu == 1 then att() end
-if menu == 2 then exit() end
+if menu == 2 then sky() end
+if menu == 3 then exit() end
 menuk = -1
+end
+--
+function sky()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber('-6', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('-9999996', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.clearResults()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber('1000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(107)
+gg.editAll('99', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 end
 --
 	function att()
