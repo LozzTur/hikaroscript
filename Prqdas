@@ -1,4 +1,5 @@
 gg.alert('Hack By: Hikaro use com responsabilidades')
+gg.alert('bolsonaro')
 --if io.open then
 --- protecion hack only ----
   --gg.searchNumber = function_hook(gg.searchNumber,new_search)
