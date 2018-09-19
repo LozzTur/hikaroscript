@@ -30,9 +30,11 @@ for i, v in ipairs(t) do
 		v.freeze = true
 		gg.clearResults()
 	gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber('1000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(107)
-gg.editAll('99', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(400)
+gg.editAll("99", gg.TYPE_FLOAT, false, 536870912, 0, -1)
+gg.clearResults()
 
     end
 end
