@@ -28,6 +28,12 @@ for i, v in ipairs(t) do
 	if v.flags == gg.TYPE_FLOAT then
 		v.value = "-99996"
 		v.freeze = true
+		gg.clearResults()
+	gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber('1000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(107)
+gg.editAll('99', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+
     end
 end
 end
