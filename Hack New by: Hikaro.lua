@@ -1,5 +1,6 @@
 gg.alert('Hack By: Hikaro use com responsabilidades')
 gg.alert("❐ Use o virtual xposed para não fechar o jogo etc...","Concordo")
+gg.alert('Teste')
 
 --if io.open then
 --- protecion hack only ----
