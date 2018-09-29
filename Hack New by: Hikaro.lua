@@ -1,5 +1,5 @@
 gg.alert('Hack By: Hikaro use com responsabilidades')
-
+gg.alert("Estã gostando do script? ","Ótimo!")
 
 --if io.open then
 --- protecion hack only ----
@@ -34,6 +34,7 @@ end
 --
 function ant22()
 gg.setRanges(gg.REGION_ANONYMOUS)
+	gg.searchNumber('0.63~0.6', gg.TYPE_XOR, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber('0.63~0.66', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber('0.63~0.66', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("0.63", gg.TYPE_FLOAT, false, gg.SIGN_NOT_EQUAL, 0, -1)
@@ -111,6 +112,7 @@ gg.clearResults()
 end
 --
 function ant()
+	gg.searchNumber('0.63~0.6', gg.TYPE_XOR, false, gg.SIGN_EQUAL, 0, -1)	
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber('0.58~0.61', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0x90000000, 0x9fffffff)
 gg.searchNumber("0.6", gg.TYPE_FLOAT, false, gg.SIGN_NOT_EQUAL, 0x90000000, 0x9fffffff)
