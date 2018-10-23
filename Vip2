@@ -1,0 +1,980 @@
+gg.alert('『SCRIPT BY: YTHikaro 2 USE COM RESPONSABILIDADES!』')
+gg.alert('↻Lembre- se de Coletar bem os Dados')
+--
+--if io.open then
+--- protecion hack only ----
+  --gg.searchNumber = function_hook(gg.searchNumber,new_search)
+  --gg.getResults = function_hook(gg.getResults,new_result)
+  --gg.editAll = function_hook(gg.editAll,new_edit)
+  --gg.clearResults = function_hook(gg.clearResults,new_clear)
+  --gg.setRanges = function_hook(gg.setRanges, new_setrange)
+  --gg.getRanges = function_hook(gg.getRanges, new_getrange)
+  --gg.addListItems = function_hook(gg.addListItems, new_add)
+--end 
+while( true ) do
+if gg.isVisible(false) then
+    menuk = 1
+    gg.setVisible(false)
+    open = 1
+    end
+--
+function open()
+menu = gg.choice({'✦ Fix Close [MENU]','✧ Informação Vip [Leia]','✦ Ban/System (Bypass)','✦ Paraquedas 🔝','✦ Aim Bot🔝','✦ Weapon Upgrade [MENU]','✦ Color Full [MENU]','✦ Map Edit 🔝','↻Med Kit 3s','✦ Antena Menu 🔝','✦ Speed e Jump Cheat','✧ Vip Area','EXIT ✘'},nil,'RESPEITE OS QUE JOGAM LIMPO! CONTA + CHEAT = BAN')
+if menu == nil then exit2() end
+if menu == 1 then fix() end
+if menu == 2 then info() end -- info
+if menu == 3 then imei() end --imei
+if menu == 4 then att() end -- att
+if menu == 5 then fov() end -- fov
+if menu == 6 then scope1() end -- scope1
+if menu == 7 then color() end -- color
+if menu == 8 then land() end -- land
+if menu == 9 then me() end -- me
+if menu == 10 then ant() end -- ant
+if menu == 11 then speed1() end--speed1
+if menu == 12 then vip() end--vip
+if menu == 13 then exit() end
+menuk = -1
+end
+--
+function info()
+menu = gg.choice({'ℹO que significa esse sinal nos cheats? [♔Vip]','ℹPor que o script pede acesso a internet?','ℹComo posso prevenir o ban?','ℹAchei bugs no script como posso contatar?','ℹComo iniciar meu menu vip?','↪ Back ↩'},nil,'Dúvidas e informações! Por favor leia todas as informações!')
+if menu == 1 then info1() end
+if menu == 2 then info2() end
+if menu == 3 then info3() end
+if menu == 4 then info4() end
+if menu == 5 then info5() end 
+if menu == 6 then open() end
+menuk = -1
+end
+--
+function info5()
+gg.alert('✧ Clique em "Area Vip" depois em "Cheats Premium" e pronto! Menu vip aberto :)')
+info()
+end
+--
+function info1()
+gg.alert('✧ Esse sinal "[♔Vip]" significa que o menu está com novos hacks vips que foram adicionados. Então sempre que ver esse sinal de uma olhada, pode ser hack novos!')
+info()
+end
+--
+function info2()
+gg.alert('✧ Não tenha medo! O acesso a internet permite que eu conserte bugs e atualize o script, ou seja, adicionar novos cheats! Nunca que iriamos roubar, seus previgializados dados aliás queremos só qualidade ao script e a você.')
+info()
+end
+--
+function info3()
+gg.alert('✧ Não é possivel prevenir o ban totalmente mas vou te passar umas dicas:ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ1: Tente usar o "Camuflar id" isso camufla seu id fazendo assim diminuir os riscos de ban.ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ2: Não use hacks a "mostra" tente disfarçar não deixe seu inimigo ou espectador perceber que está com cheat ou não use cheats "fortes"')
+info()
+end
+--
+function info4()
+gg.alert('Contate-me e me informe, que na hora vou olhar e resolver esse acusado bug Whatsapp: 11976692483')
+info()
+end
+--
+function vip()
+menu = gg.choice({'🔝 Cheats Premium [LOCKED]','🔝 Painel Adm','↪ Back ↩'},nil,'Tenha seu menu premium agora! ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤℹRequire Premium Acessℹ')
+if menu == 1 then cheats() end
+if menu == 2 then adm() end
+if menu == 3 then open() end
+menuk = -1
+end
+--
+function cheats()
+open()
+end
+--
+function wall()
+menu = gg.choice({'🔝 Active Wall Hack','🔝 Disactive Wall Hack','↪ Back ↩'},nil,'Atravesse paredes')
+if menu == 1 then walla() end
+if menu == 2 then walld() end
+if menu == 3 then cheats() end
+menuk = -1
+end
+--
+function walla()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("-7.1602882e24;-2::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(80)
+gg.editAll("-999", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast(" Wall hack Active ")
+cheats()
+end
+--
+function walld()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("-7.1602882e24;-999::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(80)
+gg.editAll("-2", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Wall hack Disactive")
+cheats()
+end
+--
+function cfg()
+menu = gg.choice({'✪ Unlock Ranked','✪ Level 98','✪ Points Ranked [FULL]','↪ Back ↩'},nil,'Configure seu game nesses cheats')
+if menu == 1 then ranked() end
+if menu == 2 then l98() end
+if menu == 3 then points() end
+if menu == 4 then cheats() end
+menuk = -1
+end
+
+function ranked()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0;0;1~9;2.8025969e-45F;9.8090893e-45F;86400::55", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1~9", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1000)
+gg.editAll("99", gg.TYPE_DWORD)
+gg.getResults(1)
+gg.clearResults()
+gg.toast("Ranqueada Unlocked")
+cheats()
+end
+--
+function l98()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0;0;1~9;2.8025969e-45F;9.8090893e-45F;86400::55", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1~9", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1000)
+gg.editAll("98", gg.TYPE_DWORD)
+gg.getResults(1)
+cheats()
+end
+--
+function points()
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+gg.searchNumber("1001~5000;5;6357110;7667820;5;6357110;7667820::69", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1000~5000", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(5)
+gg.editAll("1000", gg.TYPE_DWORD)
+cheats()
+end
+--
+function adm()
+pass = '159' -- password
+p = gg.prompt({'Não é para ninguém ter. Se você comprar isso eu vou te dar, mas parabéns pela coragem porque noção não tem.'}, { [1] = 0 }, { [1] = 'number' })
+if p[1] == pass then
+else
+	os.exit()
+end
+end
+
+
+--
+function imei()
+menu = gg.choice({'🔐 Imei Unlock (FIX)','🆔 Camuflar ID (Instabilidade!)','📡 Desactive Libmain.so (🆓)','↪ Back ↩'},nil,'Nenhum ban atrapalhá! Se esconda com estas opções ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ↪Ativar em tela de login↩')
+if menu == 1 then bm() end
+if menu == 2 then ic() end
+if menu == 3 then libmain() end
+if menu == 4 then open() end
+menuk = -1
+end
+--
+function libmain()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("-1.3093038e25;-1.3068388e21;-9.3858979e22;-9.4006553e22;-8.2433888e19;-7.6092819e19;-1.227825e23::25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.3068388e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("-1", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Complete")
+end
+
+function ic()
+menu = gg.choice({'👤 Ghost ID','👥 Fake Player ID','🔄 Load IDS','↪ Back ↩'},nil,'Mude seu id assim evitando 56℅ o ban. OBS: Ative em Load IDS para mudar completamente assim evitando mais o ban')
+if menu == 1 then gid() end
+if menu == 2 then fpid() end
+if menu == 3 then loaids() end
+if menu == 4 then open() end
+menuk = -1
+end
+--
+function gid()
+gg.searchNumber("00~FFh;21;-65;19;20;12:30", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchAddress("C40", -1, gg.TYPE_BYTE, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("44", gg.TYPE_BYTE)
+gg.clearResults()
+gg.toast('ID MUDADO')
+end
+--
+function fpid()
+menu = gg.choice({'👤 Player ID 1','👤 Player ID 2','👤 Player ID 3','↪ Back ↩'},nil,'Use id de outros players!')
+if menu == 1 then pd1() end
+if menu == 2 then pd2() end
+if menu == 3 then pd3() end
+if menu == 4 then open() end
+menuk = -1
+end
+--
+function pd1()
+gg.searchNumber("00~FFh;21;-65;19;20;12:30", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchAddress("C40", -1, gg.TYPE_BYTE, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("-44", gg.TYPE_BYTE)
+gg.clearResults()
+gg.toast('ID MUDADO')
+end
+--
+function pd2()
+gg.searchNumber("00~FFh;21;-65;19;20;12:30", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchAddress("C40", -1, gg.TYPE_BYTE, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("-55", gg.TYPE_BYTE)
+gg.clearResults()
+gg.toast('ID MUDADO')
+end
+--
+function pd3()
+gg.searchNumber("00~FFh;21;-65;19;20;12:30", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchAddress("C40", -1, gg.TYPE_BYTE, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("-88", gg.TYPE_BYTE)
+gg.clearResults()
+gg.toast('ID MUDADO')
+end
+--
+function bm()
+menu = gg.choice({'🔓Unlock IMEI (Normal)','🔓 Unlock IMEI/IP ','🔒Lock IP (Not Change)','↪ Back ↩'},nil,'Nenhum ban atrapalhará!')
+if menu == 1 then umei() end
+if menu == 2 then uip() end
+if menu == 3 then lip() end
+if menu == 4 then open() end
+menul = -1 
+end
+function lip()
+gg.alert('Função vip!','Voltar ao Menu')
+open()
+end
+--
+function umei()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("-1.3093038e25;-1.3068388e21;-9.3858979e22;-9.4006553e22;-8.2433888e19;-7.6092819e19;-1.227825e23::25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.3093038e25;-1.3068388e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("-5.9029581e21;-2.0291021e20", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Bypass Ban Complete")
+end
+--
+function uip()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("-1.3093038e25;-1.3068388e21;-9.3858979e22;-9.4006553e22;-8.2433888e19;-7.6092819e19;-1.227825e23::25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.3093038e25;-1.3068388e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("-5.9029581e21;-2.0291021e20", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("BanBy Ative")
+end
+--
+function fix()
+ menu = gg.choice({'❐ Bypass Process [NORMAL]','❐ Bypass Process [30℅]','❐ Bypass Process [45℅]','❐ Bypass Process [50℅]','↸ Voltar'},nil,'Antes de usar cheats use o bypass!')
+ if menu == 1 then by1() end
+ if menu == 2 then by2() end
+ if menu == 3 then by3() end
+ if menu == 4 then by4() end
+ if menu == 5 then open() end
+ menuk = -1
+ end
+ --
+ function by3()
+ gg.setRanges(gg.REGION_C_ALLOC | gg.REGION_C_BSS |
+gg.REGION_ANONYMOUS | gg.REGION_CODE_APP | 
+gg.REGION_BAD | gg.REGION_C_DATA | gg.REGION_CODE_SYS |
+gg.REGION_JAVA_HEAP | gg.REGION_JAVA)
+gg.searchNumber('1', gg.TYPE_AUTO, false, gg.SIGN_EQUAL, 0, -1)
+end
+--
+function by4()
+ gg.setRanges(gg.REGION_C_ALLOC | gg.REGION_C_BSS |
+gg.REGION_ANONYMOUS | gg.REGION_CODE_APP | 
+gg.REGION_BAD | gg.REGION_C_DATA | gg.REGION_CODE_SYS |
+gg.REGION_JAVA_HEAP | gg.REGION_JAVA)
+gg.searchNumber('0', gg.TYPE_AUTO, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0', gg.TYPE_AUTO, false, gg.SIGN_EQUAL, 0, -1)
+gg.clearResults()
+gg.toast(' Bypass Completed ✔ ')
+end
+
+ function by2()
+ gg.setRanges(gg.REGION_C_ALLOC | gg.REGION_C_BSS |
+gg.REGION_ANONYMOUS | gg.REGION_CODE_APP | 
+gg.REGION_)
+gg.searchNumber('1', gg.TYPE_AUTO, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('4', gg.TYPE_AUTO, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0', gg.TYPE_AUTO, false, gg.SIGN_EQUAL, 0, -1)
+gg.clearResults()
+gg.toast(' Bypass Completed ✔ ')
+end
+
+ function by1()
+gg.setRanges(gg.REGION_C_ALLOC | gg.REGION_C_BSS |
+gg.REGION_ANONYMOUS | gg.REGION_CODE_APP | 
+gg.REGION_BAD | gg.REGION_C_DATA | gg.REGION_CODE_SYS |
+gg.REGION_JAVA_HEAP | gg.REGION_JAVA)
+gg.searchNumber('0', gg.TYPE_AUTO, false, gg.SIGN_EQUAL, 0, -1)
+gg.clearResults()
+gg.toast(' Bypass Completed ✔ ')
+end
+--
+function speed1()
+menu = gg.choice({'✤ Speed 6x','✤ Nadar Rápido','✤ Pular e Continuar Correndo','✤ Super Jump [ATT]','✤ Sky Speed','✤ Speed [No Down]','✤ Tirolesa Speed','✤ Speed Deitado','↸Back'},nil,'Para que Andar?')
+if menu == 1 then speed() end
+if menu == 2 then nadar() end
+if menu == 3 then pcc() end
+if menu == 4 then jumpm() end
+if menu == 5 then skysp() end
+if menu == 6 then sd() end
+if menu == 7 then tirolesa() end 
+if menu == 8 then deitado() end
+if menu == 9 then open() end
+menuk = -1
+end
+--
+function deitado()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("3.25;0.8::13", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.8", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("1.24", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Speed Deitado Ativado")
+end
+--
+function tirolesa()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0.5;12::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("12", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("30", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Speed Tirolesa Ativo")
+end
+--
+function sd()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("3.25;1.40::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1.40", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("2.08898210526", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Speed Hack Ative")
+end
+--
+function skysp()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("2;2.9::9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2.9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("4.391", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0,671", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.toast("Sky Speed Ativado")
+end
+--
+function jumpm()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("-1.3092816e25;-1.3068377e21;-9.3858223e22;-9.4005797e22;-8.2433888e19;-7.6092819e19;-1.2279249e23::25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.3092816e25;-1.3068377e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(2)
+gg.editAll("-3.5982593e21;-2.0291021e20", gg.TYPE_FLOAT)
+gg.clearResults()
+end
+--
+function speed()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("3.25;1.40::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1.40", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("2.08898210526", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Speed Hack X6 Ativo")
+end
+--
+function nadar()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("2;2.4::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2.4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("3.591", gg.TYPE_FLOAT)
+gg.clearResults()
+end
+--
+function pcc()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("1.34;3;0.7:13", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("3", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("3333333", gg.TYPE_FLOAT)
+gg.clearResults()
+end
+--
+function ant()
+menu = gg.multiChoice({'✪ Antena 1','✪ Antena 2','✪ Antena 3','✪ Antena 4 ( PARTIDA)','✪ Antena 5 (PARTIDA)','✪ Antena 6 [LOBBY]','↸Back'},nil,'Localize os inimigos com esse cheat! Obs: essas antenas está em desenvolvimento ainda e pode apresentar instabilidade.')
+if menu [1]== true then ant1() end
+if menu [2] == true then ant2() end
+if menu [3]== true then ant3() end
+if menu [4]== true then ant4() end
+if menu [5]== true then ant5() end
+if menu [6]== true then ant6() end
+if menu [7]== true then open() end
+menuk = -1
+end
+--
+function ant6()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber(".05;.42569428682;.52430570126", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(".05;.42569428682;.52430570126", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(".05;.42569428682;.52430570126", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10000)
+gg.editAll("300", gg.TYPE_FLOAT)
+gg.toast(" Ativando Aguarde!")
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber(".75;.2499999851", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(".75;.2499999851", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(".75;.2499999851", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10000)
+gg.editAll("300", gg.TYPE_FLOAT)
+gg.toast(" 80%")
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber(".5;.4999999702", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(".5;.4999999702", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(".5;.4999999702", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10000)
+gg.editAll("300", gg.TYPE_FLOAT)
+gg.toast(" 90%")
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber(".35000002384;.64999997616", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(".35000002384;.64999997616", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(".35000002384;.64999997616", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10000)
+gg.editAll("300", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("110℅")
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("77BE7F3Fr;6F12833Ar", gg.TYPE_DWORD)
+gg.searchNumber("77BE7F3Fr;6F12833Ar", gg.TYPE_DWORD)
+gg.searchNumber("77BE7F3Fr;6F12833Ar", gg.TYPE_DWORD)
+gg.getResults(1000)
+gg.editAll("00001643r", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast(" 134℅")
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("6666263Fr;3433B33Er", gg.TYPE_DWORD)
+gg.searchNumber("6666263Fr;3433B33Er", gg.TYPE_DWORD)
+gg.searchNumber("6666263Fr;3433B33Er", gg.TYPE_DWORD)
+gg.getResults(1000)
+gg.editAll("00001643r", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("157℅")
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("3f7fbe77h;3a83126fh", gg.TYPE_DWORD)
+gg.searchNumber("3f7fbe77h;3a83126fh", gg.TYPE_DWORD)
+gg.searchNumber("3f7fbe77h;3a83126fh", gg.TYPE_DWORD)
+gg.getResults(1000)
+gg.editAll("43960000h", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("160℅")
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("3f266666h;3eb33334h", gg.TYPE_DWORD)
+gg.searchNumber("3f266666h;3eb33334h", gg.TYPE_DWORD)
+gg.searchNumber("3f266666h;3eb33334h", gg.TYPE_DWORD)
+gg.getResults(1000)
+gg.editAll("43960000h", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("189℅")
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+gg.searchNumber("0.60000002384;0.39999997616", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(5000)
+gg.editAll("300", gg.TYPE_FLOAT)
+gg.toast('200℅ completado!!')
+gg.clearResults()
+end
+--
+function ant2()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0.63~0.66", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.63~0.66", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.63", gg.TYPE_FLOAT, false, gg.SIGN_NOT_EQUAL, 0, -1)
+gg.searchNumber("0.64", gg.TYPE_FLOAT, false, gg.SIGN_NOT_EQUAL, 0, -1)
+gg.searchNumber("0.65", gg.TYPE_FLOAT, false, gg.SIGN_NOT_EQUAL, 0, -1)
+gg.searchNumber("0.66", gg.TYPE_FLOAT, false, gg.SIGN_NOT_EQUAL, 0, -1)
+gg.searchNumber("0.63~0.66", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10000)
+gg.editAll("30", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Antenna 2 Ativado Não deixe Em locais Base")
+end
+--
+function ant3()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0.72~0.77", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.73", gg.TYPE_FLOAT, false, gg.SIGN_NOT_EQUAL, 0, -1)
+gg.searchNumber("0.74", gg.TYPE_FLOAT, false, gg.SIGN_NOT_EQUAL, 0, -1)
+gg.searchNumber("0.75", gg.TYPE_FLOAT, false, gg.SIGN_NOT_EQUAL, 0, -1)
+gg.searchNumber("0.76", gg.TYPE_FLOAT, false, gg.SIGN_NOT_EQUAL, 0, -1)
+gg.searchNumber("0.72~0.77", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10000)
+gg.editAll("30", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Antenna 3 Ativado")
+end
+--
+function ant4()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0.23~0.27", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.23", gg.TYPE_FLOAT, false, gg.SIGN_NOT_EQUAL, 0, -1)
+gg.searchNumber("0.24", gg.TYPE_FLOAT, false, gg.SIGN_NOT_EQUAL, 0, -1)
+gg.searchNumber("0.25", gg.TYPE_FLOAT, false, gg.SIGN_NOT_EQUAL, 0, -1)
+gg.searchNumber("0.26", gg.TYPE_FLOAT, false, gg.SIGN_NOT_EQUAL, 0, -1)
+gg.searchNumber("0.27", gg.TYPE_FLOAT, false, gg.SIGN_NOT_EQUAL, 0, -1)
+gg.searchNumber("0.23~0.27", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10000)
+gg.editAll("30", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Antenna 4 Ativado Aguarde...")
+end
+--
+function ant5()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("0.75;0.25::9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.75;0.25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(5000)
+gg.addListItems({ -- table(46e6396)
+})
+gg.clearResults()
+gg.toast("Antena 5 Ativado")
+end
+--
+function ant1()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0.57~0.62", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.57", gg.TYPE_FLOAT, false, gg.SIGN_NOT_EQUAL, 0, -1)
+gg.searchNumber("0.58", gg.TYPE_FLOAT, false, gg.SIGN_NOT_EQUAL, 0, -1)
+gg.searchNumber("0.59", gg.TYPE_FLOAT, false, gg.SIGN_NOT_EQUAL, 0, -1)
+gg.searchNumber("0.6", gg.TYPE_FLOAT, false, gg.SIGN_NOT_EQUAL, 0, -1)
+gg.searchNumber("0.61", gg.TYPE_FLOAT, false, gg.SIGN_NOT_EQUAL, 0, -1)
+gg.searchNumber("0.62", gg.TYPE_FLOAT, false, gg.SIGN_NOT_EQUAL, 0, -1)
+gg.searchNumber("0.57~0.62", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10000)
+gg.editAll("30", gg.TYPE_FLOAT)
+gg.clearResults()
+end
+--
+function me()
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+gg.searchNumber("75D;4D;5D;4::13", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("3", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Mekit 3s Ativado")
+end
+--
+function land()
+menu = gg.multiChoice({'✤ Night Mode','✤ Underground','✤ All Female [LOBBY]🔝','✤ All Male [LOBBY] 🔝','✤ No Fog [LOBBY]🔝','✤ No Wall, No Tree e No Grass [LOBBY]🔝','✤ No Land','✤ FoV Agachado','↸Back'},nil,'Modifique o mapa do game etc...')
+if menu [1] == true then night() end
+if menu [2] == true then under() end
+if menu [3] == true then female() end
+if menu [4] == true then male() end -- male
+if menu [5] == true then fog() end -- fog
+if menu [6] == true then tudo() end -- tudo
+if menu [7] == true then no() end -- no
+if menu [8] == true then fovg() end
+if menu [9] == true then open() end
+menuk = -1
+end
+--
+function fovg()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("1.34;1::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(2)
+gg.editAll("50", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Ativado")
+end
+--
+function male()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("-1.2278589e23;-2.0291021e20::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.2278589e23", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("-5.9029581e21", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("All Male Ativado")
+end
+--
+function under()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("0.75", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.75", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(5000)
+gg.editAll("1.9551", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Underground Ativo")
+end
+--
+function no()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("100.00001525879;100.00001525879;1;98:100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(200)
+gg.editAll("-10.561", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("No Land Ativado")
+end
+--
+function tudo()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("4.179737e-40;-1.3094514e25;-1.3068399e21::9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.3068399e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(2)
+gg.editAll("-2.0291021e20", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("-7.1608877e24;-1.309396e25;-1.3068377e21;-3.6951134e20;-5.9052639e21;-5.8585922e26::21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.3068377e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(2)
+gg.editAll("-2.0291021e20", gg.TYPE_FLOAT)
+gg.clearResults()
+end
+--
+function night()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber(".57735025883;.01;1.0e-6::9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1.0e-6", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("-1", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Night Mode Ativado")
+end
+--
+function fog()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("1.1617992e-38;-1.3092816e25;-1.3068377e21;-9.3857971e22::13", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.3092816e25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(2)
+gg.editAll("-5.9029581e21", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("No Fog Ativado")
+end
+--
+function color()
+menu = gg.choice({'❑ White Body','❑ White Body [WORK]','White Body [FULL]','❑ Black Body','❑ Black Body [FULL]','↸Back'},nil,'MUDAR A COR DO CORPO É MODA...')
+if menu == 1 then b1() end
+if menu == 2 then b2() end
+if menu == 3 then b3() end
+if menu == 4 then b4() end
+if menu == 5 then b5() end
+if menu == 6 then open() end
+menuk = -1
+end
+--
+function b4()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1000)
+gg.editAll("-800", gg.TYPE_FLOAT)
+end
+--
+function b5()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("16D;4::53", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1000)
+gg.editAll("-800", gg.TYPE_FLOAT)
+gg.clearResults()
+end
+--
+function b3()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("0.95066565275;4::377", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1000)
+gg.editAll("800", gg.TYPE_FLOAT)
+gg.clearResults()
+end
+--
+function b1()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("16D;4::53", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1000)
+gg.editAll("800", gg.TYPE_FLOAT)
+gg.clearResults()
+end
+--
+function b2()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1000)
+gg.editAll("10A4E310h", gg.TYPE_FLOAT)
+end
+--
+function scope1()
+menu = gg.choice({'✪ Less Recoil 🔝','✪ Aim Lock 🔝','✪ Fun! [♔Vip]','✪ Reload Fast','✪ Fast Fire 🔝','✪ No KnockDown 🔝','✪ Aim Detect 🔝','✪ Aim [Fixed 2] 🔝','↸Back'},nil,'Faça upgrades em seus tiros!')
+if menu == 1 then less() end
+if menu == 2 then aiml() end
+if menu == 3 then fun() end
+if menu == 4 then rel() end
+if menu == 5 then fastfire() end
+if menu == 6 then knd() end
+if menu == 7 then aimd() end
+if menu == 8 then aimff() end
+if menu == 9 then open() end
+menuk = -1
+end
+--
+function aimff()
+gg.searchNumber("0.5;0.5;0.84705883265::29", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.5;0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("5", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Aim Fix Ative")
+end
+--
+function aimd()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("-8.5632596e22;-2.0291e20;-1.3092761e25;-3.7052061e20;-8.5002705e22::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.3092761e25;-3.7052061e20", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(2)
+gg.editAll("-5.9029587e21;-2.0291021e20", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("75;40::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("40", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("360", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0.50499999523;0.50499999523::9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("50.1234", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Aim Detect Ative")
+end
+--
+function knd()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("-1.2278533e23;-2.0291021e20;-1.3094071e25;-1.3068388e21;-3.6951134e20;-9.3858043e22::21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.3068388e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(2)
+gg.editAll("-2.0291021e20", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("No KnockDown Ativado")
+end
+--
+function fastfire()
+menu = gg.choice({'❐ Fast Fire 2x','❐ Fast Fire 3x','↻Remove Bugs','↪ Back ↩'},nil,'Aumenta a velocidade de seus tiros!')
+if menu == 1 then f2() end
+if menu == 2 then f3() end
+if menu == 3 then rb() end
+if menu == 4 then scope1() end
+menuk = -1
+end
+--
+function rb()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("4.289767e-40;-8.5003065e22::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("5003065e22", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.clearResults()
+gg.toast("BUGS REMOVED ⇄")
+end
+--
+function f2()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("4.289767e-40;-8.5003065e22::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-8.5003065e22", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(2)
+gg.editAll("-3.5979432e21", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Fast Fire Ativado")
+end
+--
+function f3()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("4.289767e-40;-8.5003065e22::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-8.5003065e22", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(2)
+gg.editAll("-3.5979795e21", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Fast Fire Ativado")
+end
+--
+function aiml()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("-8.5632596e22;-2.0291e20;-1.3092761e25;-3.7052061e20;-8.5002705e22::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.3092761e25;-3.7052061e20", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(2)
+gg.editAll("-5.9029587e21;-2.0291021e20", gg.TYPE_FLOAT)
+gg.clearResults()
+end
+--
+function less()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("-1.3094071e25;-1.3068388e21;-3.6951134e20;-9.3858619e22;-9.4043087e22;-8.2433888e19;-7.666928e19;-1.2279891e23::29", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.3094071e25;-1.3068388e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("-3.5981453e21;-2.0291021e20", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Less Recoil Ative")
+end
+--
+function rel()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("9.3528511e-38;-1.3094071e25;-1.3068388e21::9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.3094071e25;-1.3068388e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(8)
+gg.editAll("-5.9034006e21;-2.0291021e20", gg.TYPE_FLOAT)
+gg.clearResults()
+end
+--
+function fun()
+menu = gg.choice({'❐ Super Damage 🆕','❐ Semi Aim','❐ Infinity Bullet','↸Back'},nil,'TÃO INÚTIL... MAS TÃO LEGAL ♡')
+if menu == 1 then dm() end
+if menu == 2 then semi() end
+if menu == 3 then bullet() end
+if menu == 4 then scope1() end
+menuk = -1
+end
+--
+function bullet()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("7.546833e-41;-1.3092761e25;-3.7052061e20;-8.5002921e22::13", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.3092761e25;-3.7052061e20", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("-5.9029587e21;-2.0291021e20", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Unlimited Bullet Ativado")
+end
+--
+function semi()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("-7.5597027e22;-2.0291021e20;-8.5003137e22;-2.0291021e20::13", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-8.5003137e22", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(2)
+gg.editAll("-3.6158841e21", gg.TYPE_FLOAT)
+gg.clearResults()
+end
+--
+function dm()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("5.5;1.0;0.75::9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("5.5;1;0.75", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(3)
+gg.editAll("499.999969242;49.999;49.99996948242", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("High Damage Ativado!!")
+end
+--
+
+function fov()
+gg.alert('Recurso Vip')
+open()
+end
+--
+	function att()
+	menu = gg.choice({'☑ Ativar','☒ Desativar','↸ Back'},nil,'É UM PÁSSARO? É UM AVIÃO?')
+	if menu == 1 then bg1() end
+	if menu == 2 then b2() end
+	if menu == 3 then open() end
+	menuk = -1
+	end
+--
+function bg1()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("-6;-12;-4::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-6", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(5)
+gg.editAll("-999996", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("0.0001;1000::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(5)
+gg.editAll("200", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("3.3230392e-40;1000::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(5)
+gg.editAll("200", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("1.4286518e-40;1000::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(5)
+gg.editAll("200", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Para quedas Ativado!")
+end
+--
+function bg2()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("-999996;-12;-4::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-999996", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(5)
+gg.editAll("-6", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("0.0001;200::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(5)
+gg.editAll("1000", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("3.3230392e-40;200::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(5)
+gg.editAll("1000", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("1.4286518e-40;200::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(5)
+gg.editAll("1000", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Desativado :)")
+end
+--
+function exit()
+gg.alert('Obrigado por usar meu script! Visite meu canal quando puder ;) YTHikaro 2')
+gg.toast('FIM')
+print('♡ Gostou do script? Visite meu canal para mais scripts! YTHikaro 2')
+print('♡ Contato: 11976692483 Whatsapp')
+print('♡ Grupo Whatsapp: https://chat.whatsapp.com/8QNYY78Ta4fIhxCMKubEOg ')
+os.exit()
+end
+--
+function exit2()
+gg.toast('MINIMIZADO')
+end
+
+if menuk == 1 then 
+open() 
+end
+end
+--
