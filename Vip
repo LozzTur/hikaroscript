@@ -19,6 +19,8 @@ if gg.isVisible(false) then
     open = 1
     end
 --
+gg.alert('Respeite os que jogam limpo!')
+
 function open()
 menu = gg.choice({'✦ Fix Close [MENU]','✧ Informação Vip [Leia]','✦ Ban/System (Bypass)','✦ Paraquedas 🔝','✦ Aim Bot🔝','✦ Weapon Upgrade [MENU]','✦ Color Full [MENU]','✦ Map Edit 🔝','↻Med Kit 3s','✦ Antena Menu 🔝','✦ Speed e Jump Cheat','EXIT ✘'},nil,'RESPEITE OS QUE JOGAM LIMPO! CONTA + CHEAT = BAN')
 if menu == nil then exit2() end
