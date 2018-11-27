@@ -126,13 +126,18 @@ info()
 end
 --
 function vip()
-menu = gg.choice({'🔝 Painel Adm','↪ Back ↩'},nil,'Nada Demais...')
-if menu == 1 then cheats() end
-if menu == 2 then adm() end
+menu = gg.choice({'🔝 Painel Adm','📜 Notas da Atualização','↪ Back ↩'},nil,'Nada Demais...')
+if menu == 1 then adm() end
+if menu == 2 then notas() end
 if menu == 3 then open() end
 menuk = -1
 end
 --
+function notas()
+gg.alert('◆ Bugs Fixed')
+open()
+end
+
 function cheats()
 local LOAD, FILE 
 LOAD = loadfile 
