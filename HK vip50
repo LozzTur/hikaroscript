@@ -909,6 +909,14 @@ end
 --
 function fovg()
 gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("-1.3094071e25;-1.3068388e21;-3.6951134e20;-9.3858007e22;-9.4042474e22;-8.2433888e19;-7.666928e19;-8.5055955e22::29", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.3094071e25;-1.3068388e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(2)
+gg.editAll("-3.6156654e21;-2.0291021e20", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Eagle View Active")
+--
+gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("1.34;1::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(2)
