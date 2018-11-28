@@ -51,7 +51,7 @@ end
 
 gg.alert('Atenção! Não compartilhe o seu script ou sua senha a ninguém, ou o mesmo será banido do server!')
 gg.alert('『SCRIPT BY: YTHikaro 2 USE COM RESPONSABILIDADES!』')
-gg.alert('↻Lembre- se de Coletar bem os Dados')
+gg.alert('Notas: White Body lobby Fixo Antena e Fov será consertado em breve!')
 --
 --if io.open then
 --- protecion hack only ----
@@ -991,13 +991,10 @@ gg.toast("No Fog Ativado")
 end
 --
 function color()
-menu = gg.choice({'❑ White Body','❑ White Body [WORK]','White Body [FULL]','❑ Black Body','❑ Black Body [FULL]','↸Back'},nil,'MUDAR A COR DO CORPO É MODA...')
+menu = gg.choice({'❑ White Body [Lobby]','❑ Black Body [WORK]','White Body [FULL]','❑ Black Body','↸Back'},nil,'MUDAR A COR DO CORPO É MODA...')
 if menu == 1 then b1() end
 if menu == 2 then b2() end
-if menu == 3 then b3() end
-if menu == 4 then b4() end
-if menu == 5 then b5() end
-if menu == 6 then open() end
+if menu == 3 then open() end
 menuk = -1
 end
 --
@@ -1032,12 +1029,19 @@ gg.clearResults()
 end
 --
 function b1()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("16D;4::53", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(1000)
-gg.editAll("800", gg.TYPE_FLOAT)
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("-1.3094071e25;-1.3068388e21;-3.6951134e20;-9.3859592e22;-9.4044059e22;-8.2433888e19;-7.666928e19;-1.2278487e23:29", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.3094071e25;-1.3068388e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(2)
+gg.editAll("-5.9029587e21;-2.0291021e20", gg.TYPE_FLOAT)
 gg.clearResults()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("-1.3092816e25;-1.3068377e21;-3.6951141e20;-3.6965546e20;-5.9029581e21;-5.9075698e21;-1.5693141e26:25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.3092816e25;-1.3068377e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(2)
+gg.editAll("-2.9687729e21;-2.0291021e20", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("White Body Active")
 end
 --
 function b2()
@@ -1049,7 +1053,7 @@ gg.searchNumber("4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1000)
-gg.editAll("10A4E310h", gg.TYPE_FLOAT)
+gg.editAll("-800", gg.TYPE_FLOAT)
 end
 --
 function scope1()
