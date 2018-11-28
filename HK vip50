@@ -658,7 +658,7 @@ gg.setValues({ -- table(e9b999f)
 	},
 })
 gg.clearResults()
-gg.toast("Antenna 1℅ Activando')
+gg.toast("Antenna 1℅ Activando")
 
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
 gg.searchNumber("0.8607~0.8624", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
