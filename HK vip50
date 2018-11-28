@@ -51,7 +51,7 @@ end
 
 gg.alert('Atenção! Não compartilhe o seu script ou sua senha a ninguém, ou o mesmo será banido do server!')
 gg.alert('『SCRIPT BY: YTHikaro 2 USE COM RESPONSABILIDADES!』')
-gg.alert('Notas: White Body lobby Fixo e Novo chuva de balas adicionado! (Chuva De Balas [Below] Antena e Fov será consertado em breve!')
+gg.alert('Notas: White Body lobby Fixo e Novo chuva de balas adicionado! (Chuva De Balas [Below] E Modo Visão Adicionado. Antena consertado!')
 --
 --if io.open then
 --- protecion hack only ----
@@ -440,13 +440,12 @@ gg.clearResults()
 end
 --
 function ant()
-menu = gg.multiChoice({'✪ Antena Head','✪ Antena 2','✪ Antena 3','✪ Antena 4 ( PARTIDA)','✪ Antena 5 (PARTIDA)','↸Back'},nil,'Localize os inimigos com esse cheat! Obs: essas antenas está em desenvolvimento ainda e pode apresentar instabilidade.')
+menu = gg.multiChoice({'✪ Antena Head [Full]','✪ Antena 2','✪ Antena 3','↸Back'},nil,'Localize os inimigos com esse cheat! Obs: essas antenas está em desenvolvimento ainda e pode apresentar instabilidade.')
 if menu [1]== true then ant1() end
 if menu [2] == true then ant2() end
 if menu [3]== true then ant3() end
-if menu [4]== true then ant4() end
-if menu [5]== true then ant5() end
-if menu [6]== true then open() end
+if menu [4]== true then open() end
+
 menuk = -1
 end
 --
@@ -526,260 +525,63 @@ gg.clearResults()
 end
 --
 function ant2()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("0.75;0.25::9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("0.75;0.25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+
+gg.searchNumber(" 0.6393~0.63999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+
+gg.searchNumber(" 0.6393~0.63999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+
 gg.getResults(10000)
+
 gg.getResults(10000)
-gg.setValues({ -- table(4a38ef5)
+
+gg.setValues({ -- table(91d8ca4)
+
 })
+
 gg.clearResults()
-gg.toast("Antena 6 Active")
+
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+
+gg.searchNumber(" 0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+
+gg.searchNumber(" 0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+
+gg.searchNumber(" 0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+
+gg.searchNumber(" 0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+
+gg.getResults(10000)
+
+gg.setValues({ -- table(d470a0d)
+
+})
+
+gg.clearResults()
+
+gg.toast("Antenna Active")
 end
 --
 function ant3()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("0.9;0.1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+gg.searchNumber(" 0.572~0.575", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(" 0.572~0.575", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10000)
 gg.getResults(10000)
-gg.setValues({ -- table(ffb1afb)
-	[ 1] = { -- table(9452718)
-		['address'] = 0x8ba7cc4c,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[ 2] = { -- table(8eb2571)
-		['address'] = 0x8ba7cc5c,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[ 3] = { -- table(7ed8f56)
-		['address'] = 0x8ba7ccc0,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[ 4] = { -- table(4566bd7)
-		['address'] = 0x8ba7ccc8,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[ 5] = { -- table(cf19cc4)
-		['address'] = 0x8ba7ccd0,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[ 6] = { -- table(43ba7ad)
-		['address'] = 0x8ba7cd4c,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[ 7] = { -- table(74b4ae2)
-		['address'] = 0x8ba7cd5c,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[ 8] = { -- table(8abee73)
-		['address'] = 0x8ba7cdc0,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[ 9] = { -- table(3cdc130)
-		['address'] = 0x8ba7cdc8,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[10] = { -- table(a9811a9)
-		['address'] = 0x8ba7cdd0,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[11] = { -- table(9d7332e)
-		['address'] = 0x8caaa3a0,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[12] = { -- table(5ccfecf)
-		['address'] = 0x8caaa3e0,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[13] = { -- table(105c05c)
-		['address'] = 0x8caaa8a0,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[14] = { -- table(3371f65)
-		['address'] = 0x8caaa8e0,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[15] = { -- table(727543a)
-		['address'] = 0x8caba5c4,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[16] = { -- table(644b8eb)
-		['address'] = 0x8caba5d8,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[17] = { -- table(c5c8648)
-		['address'] = 0x8caba6e0,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[18] = { -- table(7ff4ce1)
-		['address'] = 0x8cabece4,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[19] = { -- table(8267a06)
-		['address'] = 0x8cabeeb4,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[20] = { -- table(833f8c7)
-		['address'] = 0x8cabeec4,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[21] = { -- table(4d7bef4)
-		['address'] = 0x8cc5c2a0,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[22] = { -- table(c2d61d)
-		['address'] = 0x8cc5c2e0,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[23] = { -- table(7a03092)
-		['address'] = 0x8eb0e778,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[24] = { -- table(ed5a63)
-		['address'] = 0x8eb0e920,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[25] = { -- table(22bd660)
-		['address'] = 0x943e6e4c,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[26] = { -- table(63bb719)
-		['address'] = 0x943e6e5c,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[27] = { -- table(f8cc3de)
-		['address'] = 0x943e6ec0,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[28] = { -- table(e5139bf)
-		['address'] = 0x943e6ec8,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[29] = { -- table(e7f88c)
-		['address'] = 0x943e6ed0,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[30] = { -- table(8c7abd5)
-		['address'] = 0x977d1310,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[31] = { -- table(f1d3fea)
-		['address'] = 0x977d1374,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[32] = { -- table(1e9b2db)
-		['address'] = 0xa01b808c,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[33] = { -- table(5621178)
-		['address'] = 0xa01b8230,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[34] = { -- table(6e43051)
-		['address'] = 0xa01b8244,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[35] = { -- table(58770b6)
-		['address'] = 0xa01b8288,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[36] = { -- table(1c6a1b7)
-		['address'] = 0xafdc39c0,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[37] = { -- table(162cd24)
-		['address'] = 0xafdc39c8,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[38] = { -- table(f6a808d)
-		['address'] = 0xafdc39d0,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[39] = { -- table(d91e242)
-		['address'] = 0xafdc3ab4,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[40] = { -- table(b19a253)
-		['address'] = 0xafdc3ac4,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[41] = { -- table(8919790)
-		['address'] = 0xafdc3c74,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[42] = { -- table(b8b9889)
-		['address'] = 0xafeeb818,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[43] = { -- table(5dfe08e)
-		['address'] = 0xafeeb894,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[44] = { -- table(29210af)
-		['address'] = 0xafeeb89c,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
-	[45] = { -- table(fa09cbc)
-		['address'] = 0xafeeb990,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 30,
-	},
+gg.setValues({ -- table(7a0ecfd)
 })
 gg.clearResults()
-gg.toast("Antena 7 Active")
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("0.99900001287;0.00100000005", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+gg.searchNumber(" 0.588~0.58999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(" 0.588~0.58999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10000)
 gg.getResults(10000)
-gg.setValues({ -- table(e7908cb)
+gg.setValues({ -- table(682df2)
 })
 gg.clearResults()
-gg.toast("Antena Active")
+gg.toast("Antenna blw Active")
 end
+	
 --
 function ant4()
 gg.setRanges(gg.REGION_ANONYMOUS)
@@ -809,79 +611,90 @@ end
 --
 function ant1()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+gg.searchNumber(" 0.572~0.575", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(" 0.572~0.575", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10000)
+gg.getResults(10000)
+gg.setValues({ -- table(7a0ecfd)
+})
+gg.clearResults()
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+gg.searchNumber(" 0.588~0.58999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(" 0.588~0.58999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10000)
+gg.getResults(10000)
+gg.setValues({ -- table(682df2)
+})
+gg.clearResults()
+gg.toast("Antenna 1 Active")
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+gg.searchNumber(" 0.6393~0.63999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(" 0.6393~0.63999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10000)
+gg.getResults(10000)
+gg.setValues({ -- table(1945bf9)
+	[1] = { -- table(bc7373e)
+		['address'] = 0x37b9548c,
+		['flags'] = 16, -- gg.TYPE_FLOAT
+		['value'] = 30,
+	},
+})
+gg.clearResults()
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+gg.searchNumber(" 0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(" 0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(" 0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(" 0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10000)
+gg.setValues({ -- table(e9b999f)
+	[1] = { -- table(1090aec)
+		['address'] = 0x37b917e8,
+		['flags'] = 16, -- gg.TYPE_FLOAT
+		['value'] = 30,
+	},
+})
+gg.clearResults()
+gg.toast("Antenna 2 Active")
+gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
+gg.searchNumber(" 0.8607~0.8624", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("0.8607~0.8624", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("0.8607~0.8624", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10000)
 gg.getResults(10000)
-gg.setValues({ -- table(70e60da)
-	[1] = { -- table(53dd90b)
-		['address'] = 0x5aad989c,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 300,
-	},
-	[2] = { -- table(cf8f3e8)
-		['address'] = 0x5aad98c4,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 300,
-	},
-	[3] = { -- table(dc0ba01)
-		['address'] = 0x5ad7589c,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 300,
-	},
-	[4] = { -- table(181b0a6)
-		['address'] = 0x5ad758c4,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 300,
-	},
-	[5] = { -- table(e6efae7)
-		['address'] = 0x5b048348,
+gg.setValues({ -- table(baa30bb)
+	[1] = { -- table(df1e9d8)
+		['address'] = 0x37a42860,
 		['flags'] = 16, -- gg.TYPE_FLOAT
 		['value'] = 300,
 	},
 })
 gg.clearResults()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
-gg.searchNumber("0.8628~0.86299", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(" 0.8628~0.86299", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("0.8628~0.86299", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10000)
 gg.getResults(10000)
-gg.setValues({ -- table(b5d6694)
+gg.setValues({ -- table(a509131)
 })
 gg.clearResults()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
-gg.searchNumber("0.874~0.8745", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(" 0.874~0.8745", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("0.874~0.8745", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10000)
 gg.getResults(10000)
-gg.setValues({ -- table(67df53d)
-	[1] = { -- table(e883132)
-		['address'] = 0x21782808,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 300,
-	},
-	[2] = { -- table(da65e83)
-		['address'] = 0x5aca9808,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 300,
-	},
-	[3] = { -- table(cf45800)
-		['address'] = 0x5acaa808,
-		['flags'] = 16, -- gg.TYPE_FLOAT
-		['value'] = 300,
-	},
+gg.setValues({ -- table(d70f016)
 })
 gg.clearResults()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
-gg.searchNumber("0.8746~0.8747", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(" 0.8746~0.8747", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("0.8746~0.8747", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10000)
 gg.getResults(10000)
-gg.setValues({ -- table(6d9a839)
+gg.setValues({ -- table(9411d97)
 })
 gg.clearResults()
 gg.toast("Antena Head Active")
 end
+
 --
 function me()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
@@ -894,7 +707,7 @@ gg.toast("Mekit 3s Ativado")
 end
 --
 function land()
-menu = gg.multiChoice({'✤ Night Mode','✤ Underground','✤ All Female [LOBBY]🔝','✤ All Male [LOBBY] 🔝','✤ No Fog [LOBBY]🔝','✤ No Wall, No Tree e No Grass [LOBBY]🔝','✤ No Land','✤ FoV Agachado','↸Back'},nil,'Modifique o mapa do game etc...')
+menu = gg.multiChoice({'✤ Night Mode','✤ Underground','✤ All Female [LOBBY]🔝','✤ All Male [LOBBY] 🔝','✤ No Fog [LOBBY]🔝','✤ No Wall, No Tree e No Grass [LOBBY]🔝','✤ No Land','✤ View Enemy [Fix Fov]','↸Back'},nil,'Modifique o mapa do game etc...')
 if menu [1] == true then night() end
 if menu [2] == true then under() end
 if menu [3] == true then female() end
@@ -909,12 +722,13 @@ end
 --
 function fovg()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("-1.3094071e25;-1.3068388e21;-3.6951134e20;-9.3858007e22;-9.4042474e22;-8.2433888e19;-7.666928e19;-8.5055955e22::29", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("-1.3094071e25;-1.3068388e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(2)
-gg.editAll("-3.6156654e21;-2.0291021e20", gg.TYPE_FLOAT)
+gg.searchNumber("2.5;2;1.2::35", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10000)
+gg.setValues({ -- table(ade9df7)
+})
 gg.clearResults()
-gg.toast("Eagle View Active")
+gg.toast("View Mode Active")
+end
 --
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("1.34;1::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
