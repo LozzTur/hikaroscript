@@ -440,14 +440,15 @@ gg.clearResults()
 end
 --
 function ant()
-menu = gg.multiChoice({'✪ Antena Head [Full]','✪ Antena 2','✪ Antena 3','↸Back'},nil,'Localize os inimigos com esse cheat! Obs: essas antenas está em desenvolvimento ainda e pode apresentar instabilidade.')
+menu = gg.multiChoice({'✪ Antena 1 [Full]','✪ Antena 2','✪ Antena 3','✪ Antena Head Full','↸Back'},nil,'Localize os inimigos com esse cheat! Obs: essas antenas está em desenvolvimento ainda e pode apresentar instabilidade.')
 if menu [1]== true then ant1() end
 if menu [2] == true then ant2() end
 if menu [3]== true then ant3() end
-if menu [4]== true then open() end
-
+if menu [4] == true then antenaHead() end
+if menu [5]== true then open() end
 menuk = -1
 end
+
 --
 function ant6()
 gg.setRanges(gg.REGION_ANONYMOUS)
@@ -527,9 +528,9 @@ end
 function ant2()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
 
-gg.searchNumber(" 0.6393~0.63999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.6393~0.63999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 
-gg.searchNumber(" 0.6393~0.63999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.6393~0.63999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 
 gg.getResults(10000)
 
@@ -543,13 +544,13 @@ gg.clearResults()
 
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
 
-gg.searchNumber(" 0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 
-gg.searchNumber(" 0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 
-gg.searchNumber(" 0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 
-gg.searchNumber(" 0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 
 gg.getResults(10000)
 
@@ -564,16 +565,16 @@ end
 --
 function ant3()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
-gg.searchNumber(" 0.572~0.575", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber(" 0.572~0.575", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.572~0.575", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.572~0.575", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10000)
 gg.getResults(10000)
 gg.setValues({ -- table(7a0ecfd)
 })
 gg.clearResults()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
-gg.searchNumber(" 0.588~0.58999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber(" 0.588~0.58999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.588~0.58999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.588~0.58999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10000)
 gg.getResults(10000)
 gg.setValues({ -- table(682df2)
@@ -611,25 +612,28 @@ end
 --
 function ant1()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
-gg.searchNumber(" 0.572~0.575", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber(" 0.572~0.575", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.572~0.575", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.572~0.575", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10000)
 gg.getResults(10000)
 gg.setValues({ -- table(7a0ecfd)
 })
 gg.clearResults()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
-gg.searchNumber(" 0.588~0.58999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber(" 0.588~0.58999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.588~0.58999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.588~0.58999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10000)
 gg.getResults(10000)
 gg.setValues({ -- table(682df2)
 })
 gg.clearResults()
 gg.toast("Antenna 1 Active")
+end
+
+function antenaHead()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
-gg.searchNumber(" 0.6393~0.63999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber(" 0.6393~0.63999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.6393~0.63999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.6393~0.63999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10000)
 gg.getResults(10000)
 gg.setValues({ -- table(1945bf9)
@@ -641,10 +645,10 @@ gg.setValues({ -- table(1945bf9)
 })
 gg.clearResults()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
-gg.searchNumber(" 0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber(" 0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber(" 0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber(" 0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.615~0.617", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10000)
 gg.setValues({ -- table(e9b999f)
 	[1] = { -- table(1090aec)
@@ -654,9 +658,10 @@ gg.setValues({ -- table(e9b999f)
 	},
 })
 gg.clearResults()
-gg.toast("Antenna 2 Active")
+gg.toast("Antenna 1℅ Activando')
+
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
-gg.searchNumber(" 0.8607~0.8624", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.8607~0.8624", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("0.8607~0.8624", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10000)
 gg.getResults(10000)
@@ -669,7 +674,7 @@ gg.setValues({ -- table(baa30bb)
 })
 gg.clearResults()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
-gg.searchNumber(" 0.8628~0.86299", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.8628~0.86299", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("0.8628~0.86299", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10000)
 gg.getResults(10000)
@@ -677,7 +682,7 @@ gg.setValues({ -- table(a509131)
 })
 gg.clearResults()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
-gg.searchNumber(" 0.874~0.8745", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.874~0.8745", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("0.874~0.8745", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10000)
 gg.getResults(10000)
@@ -685,7 +690,7 @@ gg.setValues({ -- table(d70f016)
 })
 gg.clearResults()
 gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS)
-gg.searchNumber(" 0.8746~0.8747", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.8746~0.8747", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("0.8746~0.8747", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10000)
 gg.getResults(10000)
